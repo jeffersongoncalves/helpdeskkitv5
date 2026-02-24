@@ -34,6 +34,16 @@ Clone the repository
 laravel new my-app --using=jeffersongoncalves/filakitv5 --database=mysql
 ```
 
+### Using FilaKit CLI
+
+Or use [FilaKit CLI](https://github.com/jeffersongoncalves/filakit-cli) for a simplified setup:
+
+```bash
+filakit new my-app --kit=jeffersongoncalves/filakitv5
+```
+
+> Install FilaKit CLI: `composer global require jeffersongoncalves/filakit-cli`
+
 ###  Easy Installation
 
 FilaKit can be easily installed using the following command:
