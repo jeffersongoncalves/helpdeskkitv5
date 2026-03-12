@@ -2227,16 +2227,16 @@
         },
         {
             "name": "jeffersongoncalves/filament-help-desk",
-            "version": "v3.0.3",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeffersongoncalves/filament-help-desk.git",
-                "reference": "0be3c46e4fc88f95ed4fac78ef3c3e33d36a7a42"
+                "reference": "208340ac32b4d146af9a581c63106cb8a0e0fe8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeffersongoncalves/filament-help-desk/zipball/0be3c46e4fc88f95ed4fac78ef3c3e33d36a7a42",
-                "reference": "0be3c46e4fc88f95ed4fac78ef3c3e33d36a7a42",
+                "url": "https://api.github.com/repos/jeffersongoncalves/filament-help-desk/zipball/208340ac32b4d146af9a581c63106cb8a0e0fe8f",
+                "reference": "208340ac32b4d146af9a581c63106cb8a0e0fe8f",
                 "shasum": ""
             },
             "require": {
@@ -2289,7 +2289,7 @@
             ],
             "support": {
                 "issues": "https://github.com/jeffersongoncalves/filament-help-desk/issues",
-                "source": "https://github.com/jeffersongoncalves/filament-help-desk/tree/v3.0.3"
+                "source": "https://github.com/jeffersongoncalves/filament-help-desk/tree/v3.0.5"
             },
             "funding": [
                 {
@@ -2297,7 +2297,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-04T03:14:16+00:00"
+            "time": "2026-03-11T15:40:34+00:00"
         },
         {
             "name": "jeffersongoncalves/filament-logo",
@@ -4119,16 +4119,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.11.1",
+            "version": "3.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonPHP/carbon.git",
-                "reference": "f438fcc98f92babee98381d399c65336f3a3827f"
+                "reference": "6a7e652845bb018c668220c2a545aded8594fbbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/f438fcc98f92babee98381d399c65336f3a3827f",
-                "reference": "f438fcc98f92babee98381d399c65336f3a3827f",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/6a7e652845bb018c668220c2a545aded8594fbbf",
+                "reference": "6a7e652845bb018c668220c2a545aded8594fbbf",
                 "shasum": ""
             },
             "require": {
@@ -4220,7 +4220,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-29T09:26:29+00:00"
+            "time": "2026-03-11T17:23:39+00:00"
         },
         {
             "name": "nette/php-generator",
