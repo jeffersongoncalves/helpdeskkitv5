@@ -4,15 +4,15 @@
 
 </div>
 
-# HelpDeskKit — Start Kit Filament 5.x and Laravel 12.x
+# HelpDeskKit — Start Kit Filament 5.x and Laravel 13.x
 
 ## About HelpDeskKit
 
-HelpDeskKit is a robust starter kit built on Laravel 12.x and Filament 5.x, designed to accelerate the development of help desk and support ticket applications with a ready-to-use multi-panel structure and integrated ticket management.
+HelpDeskKit is a robust starter kit built on Laravel 13.x and Filament 5.x, designed to accelerate the development of help desk and support ticket applications with a ready-to-use multi-panel structure and integrated ticket management.
 
 ## Features
 
-- **Laravel 12.x** — The latest version of the most elegant PHP framework
+- **Laravel 13.x** — The latest version of the most elegant PHP framework
 - **Filament 5.x** — Powerful and flexible admin framework
 - **Help Desk System** — Full ticket management powered by [filament-help-desk](https://github.com/jeffersongoncalves/filament-help-desk)
     - Ticket creation, assignment, comments, attachments, and history
@@ -31,7 +31,7 @@ HelpDeskKit is a robust starter kit built on Laravel 12.x and Filament 5.x, desi
 
 ## System Requirements
 
-- PHP 8.2 or higher
+- PHP 8.3 or higher
 - Composer
 - Node.js and PNPM
 
