@@ -6,6 +6,8 @@
 
 # HelpDeskKit — Start Kit Filament 5.x and Laravel 13.x
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
+
 ## About HelpDeskKit
 
 HelpDeskKit is a robust starter kit built on Laravel 13.x and Filament 5.x, designed to accelerate the development of help desk and support ticket applications with a ready-to-use multi-panel structure and integrated ticket management.
