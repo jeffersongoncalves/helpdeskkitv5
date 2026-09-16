@@ -2308,21 +2308,21 @@
         },
         {
             "name": "jeffersongoncalves/filament-help-desk",
-            "version": "3.1.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeffersongoncalves/filament-help-desk.git",
-                "reference": "4809c99a57bd5c78a79ffa7a971a1ff7f57fdd01"
+                "reference": "97a22bbea4e936e724f9b58ac62831132514925b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeffersongoncalves/filament-help-desk/zipball/4809c99a57bd5c78a79ffa7a971a1ff7f57fdd01",
-                "reference": "4809c99a57bd5c78a79ffa7a971a1ff7f57fdd01",
+                "url": "https://api.github.com/repos/jeffersongoncalves/filament-help-desk/zipball/97a22bbea4e936e724f9b58ac62831132514925b",
+                "reference": "97a22bbea4e936e724f9b58ac62831132514925b",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.3",
-                "jeffersongoncalves/laravel-help-desk": "^1.0",
+                "jeffersongoncalves/laravel-help-desk": "^1.5",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.16"
             },
@@ -2370,15 +2370,19 @@
             ],
             "support": {
                 "issues": "https://github.com/jeffersongoncalves/filament-help-desk/issues",
-                "source": "https://github.com/jeffersongoncalves/filament-help-desk/tree/3.1.0"
+                "source": "https://github.com/jeffersongoncalves/filament-help-desk/tree/3.2.1"
             },
             "funding": [
+                {
+                    "url": "https://buymeacoffee.com/jeffersongoncalves",
+                    "type": "custom"
+                },
                 {
                     "url": "https://github.com/jeffersongoncalves",
                     "type": "github"
                 }
             ],
-            "time": "2026-06-24T00:01:41+00:00"
+            "time": "2026-09-16T22:08:42+00:00"
         },
         {
             "name": "jeffersongoncalves/filament-logo",
@@ -2726,16 +2730,16 @@
         },
         {
             "name": "jeffersongoncalves/laravel-help-desk",
-            "version": "v1.3.2",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeffersongoncalves/laravel-help-desk.git",
-                "reference": "9aa31c48b02707ab5d38ec3c71cb4d7159506b94"
+                "reference": "930bcb9179e281330bdb0e8662a0177f9c46418c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeffersongoncalves/laravel-help-desk/zipball/9aa31c48b02707ab5d38ec3c71cb4d7159506b94",
-                "reference": "9aa31c48b02707ab5d38ec3c71cb4d7159506b94",
+                "url": "https://api.github.com/repos/jeffersongoncalves/laravel-help-desk/zipball/930bcb9179e281330bdb0e8662a0177f9c46418c",
+                "reference": "930bcb9179e281330bdb0e8662a0177f9c46418c",
                 "shasum": ""
             },
             "require": {
@@ -2797,15 +2801,19 @@
             ],
             "support": {
                 "issues": "https://github.com/jeffersongoncalves/laravel-help-desk/issues",
-                "source": "https://github.com/jeffersongoncalves/laravel-help-desk/tree/v1.3.2"
+                "source": "https://github.com/jeffersongoncalves/laravel-help-desk/tree/v1.6.0"
             },
             "funding": [
+                {
+                    "url": "https://buymeacoffee.com/jeffersongoncalves",
+                    "type": "custom"
+                },
                 {
                     "url": "https://github.com/jeffersongoncalves",
                     "type": "github"
                 }
             ],
-            "time": "2026-08-31T12:36:58+00:00"
+            "time": "2026-09-16T22:52:31+00:00"
         },
         {
             "name": "jeffersongoncalves/laravel-pwa-favicon",
