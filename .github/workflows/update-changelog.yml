@@ -26,10 +26,24 @@ jobs:
           # is not out of date.
           ref: ${{ github.event.release.target_commitish }}
 
+      - name: Resolve target branch
+        id: target_branch
+        env:
+          TARGET_COMMITISH: ${{ github.event.release.target_commitish }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          if git ls-remote --exit-code --heads origin "$TARGET_COMMITISH" > /dev/null; then
+            echo "branch=$TARGET_COMMITISH" >> "$GITHUB_OUTPUT"
+          else
+            echo "branch=$DEFAULT_BRANCH" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Extract release date from git tag
         id: release_date
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
         run: |
-          echo "date=$(git log -1 --date=short --format=%ad '${{ github.event.release.tag_name }}')" >> $GITHUB_OUTPUT;
+          echo "date=$(git log -1 --date=short --format=%ad "$RELEASE_TAG")" >> "$GITHUB_OUTPUT"
 
       - name: Update Changelog
         uses: stefanzweifel/changelog-updater-action@a938690fad7edf25368f37e43a1ed1b34303eb36 # v1
@@ -66,6 +80,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7
         with:
           # Push updated CHANGELOG to release target branch.
-          branch: ${{ github.event.release.target_commitish }}
+          branch: ${{ steps.target_branch.outputs.branch }}
           commit_message: Update CHANGELOG
           file_pattern: CHANGELOG.md
