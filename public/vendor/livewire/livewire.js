@@ -1199,9 +1199,11 @@
     if (!currentlyObserving)
       return callback();
     stopObservingMutations();
-    let result = callback();
-    startObservingMutations();
-    return result;
+    try {
+      return callback();
+    } finally {
+      startObservingMutations();
+    }
   }
   var isCollecting = false;
   var deferredMutations = [];
@@ -2796,7 +2798,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     get transaction() {
       return transaction;
     },
-    version: "3.17.3",
+    version: "3.17.4",
     flushAndStopDeferringMutations,
     dontAutoEvaluateFunctions,
     disableEffectScheduling,
@@ -12209,6 +12211,10 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
         evaluator(() => {
         }, { scope: { "$width": width, "$height": height } });
       };
+      if (modifiers.includes("viewport")) {
+        onViewportResize(evaluate3, cleanup);
+        return;
+      }
       let off2 = modifiers.includes("document") ? onDocumentResize(evaluate3) : onElResize(el, evaluate3);
       cleanup(() => off2());
     }));
@@ -12220,6 +12226,17 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     });
     observer2.observe(el);
     return () => observer2.disconnect();
+  }
+  function onViewportResize(callback, cleanup) {
+    let viewport = window.visualViewport;
+    if (!viewport) {
+      cleanup(onElResize(document.documentElement, callback));
+      return;
+    }
+    let evaluate3 = () => callback(viewport.width, viewport.height);
+    viewport.addEventListener("resize", evaluate3);
+    cleanup(() => viewport.removeEventListener("resize", evaluate3));
+    evaluate3();
   }
   var documentResizeObserver;
   var documentResizeObserverCallbacks = /* @__PURE__ */ new Set();
@@ -13742,17 +13759,19 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
       callback((whenReleased) => whenReleased());
     });
   }
-  function whenThisLinkIsHoveredFor(el, ms = 60, callback) {
-    el.addEventListener("mouseenter", (e) => {
-      let timeout = setTimeout(() => {
-        callback(e);
-      }, ms);
-      let handler4 = () => {
-        clearTimeout(timeout);
-        el.removeEventListener("mouseleave", handler4);
-      };
-      el.addEventListener("mouseleave", handler4);
-    });
+  function whenThisLinkIsHoveredOrFocusedFor(el, ms = 60, callback) {
+    for (let [enterEvent, leaveEvent] of [["mouseenter", "mouseleave"], ["focus", "blur"]]) {
+      el.addEventListener(enterEvent, (e) => {
+        let timeout = setTimeout(() => {
+          callback(e);
+        }, ms);
+        let handler4 = () => {
+          clearTimeout(timeout);
+          el.removeEventListener(leaveEvent, handler4);
+        };
+        el.addEventListener(leaveEvent, handler4);
+      });
+    }
   }
   function extractDestinationFromLink(linkEl) {
     return createUrlObjectFromString2(linkEl.getAttribute("href"));
@@ -14616,7 +14635,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     Alpine3.directive("navigate", (el, { modifiers }) => {
       let shouldPrefetchOnHover = modifiers.includes("hover");
       let preserveScroll = modifiers.includes("preserve-scroll");
-      shouldPrefetchOnHover && whenThisLinkIsHoveredFor(el, 60, () => {
+      shouldPrefetchOnHover && whenThisLinkIsHoveredOrFocusedFor(el, 60, () => {
         let destination = extractDestinationFromLink(el);
         if (linkShouldBeHandledNatively(el, destination) || isSamePageFragment(destination))
           return;
