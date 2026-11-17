@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5526f2b05e94594b3991bd45c02adc56",
+    "content-hash": "fc07faaf8ae58404cab56b2eceb12b62",
     "packages": [
         {
             "name": "achyutn/filament-log-viewer",
@@ -2632,21 +2632,21 @@
         },
         {
             "name": "jeffersongoncalves/filament-help-desk",
-            "version": "3.9.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeffersongoncalves/filament-help-desk.git",
-                "reference": "8fbf9c6399e16c54ab2911d0d316603daa909f03"
+                "reference": "c62bfba5fb2f1e1185af1c7639981ffab617f2d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeffersongoncalves/filament-help-desk/zipball/8fbf9c6399e16c54ab2911d0d316603daa909f03",
-                "reference": "8fbf9c6399e16c54ab2911d0d316603daa909f03",
+                "url": "https://api.github.com/repos/jeffersongoncalves/filament-help-desk/zipball/c62bfba5fb2f1e1185af1c7639981ffab617f2d4",
+                "reference": "c62bfba5fb2f1e1185af1c7639981ffab617f2d4",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.3",
-                "jeffersongoncalves/laravel-help-desk": "^1.14",
+                "jeffersongoncalves/laravel-help-desk": "^1.15",
                 "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.16"
             },
@@ -2699,7 +2699,7 @@
             ],
             "support": {
                 "issues": "https://github.com/jeffersongoncalves/filament-help-desk/issues",
-                "source": "https://github.com/jeffersongoncalves/filament-help-desk/tree/3.9.0"
+                "source": "https://github.com/jeffersongoncalves/filament-help-desk/tree/3.10.0"
             },
             "funding": [
                 {
@@ -2711,8 +2711,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-17T00:54:47+00:00",
-            "published-time": "2026-11-17T00:56:33+00:00"
+            "time": "2026-11-17T01:50:39+00:00",
+            "published-time": "2026-11-17T01:51:07+00:00"
         },
         {
             "name": "jeffersongoncalves/filament-logo",
@@ -3319,16 +3319,16 @@
         },
         {
             "name": "jeffersongoncalves/laravel-help-desk",
-            "version": "v1.14.0",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeffersongoncalves/laravel-help-desk.git",
-                "reference": "b02cf2744e3914a712d8bdfbdba29716ca81e13c"
+                "reference": "f36553e0b2f9515bc1b4944e9137a9f134a7bd61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeffersongoncalves/laravel-help-desk/zipball/b02cf2744e3914a712d8bdfbdba29716ca81e13c",
-                "reference": "b02cf2744e3914a712d8bdfbdba29716ca81e13c",
+                "url": "https://api.github.com/repos/jeffersongoncalves/laravel-help-desk/zipball/f36553e0b2f9515bc1b4944e9137a9f134a7bd61",
+                "reference": "f36553e0b2f9515bc1b4944e9137a9f134a7bd61",
                 "shasum": ""
             },
             "require": {
@@ -3391,7 +3391,7 @@
             ],
             "support": {
                 "issues": "https://github.com/jeffersongoncalves/laravel-help-desk/issues",
-                "source": "https://github.com/jeffersongoncalves/laravel-help-desk/tree/v1.14.0"
+                "source": "https://github.com/jeffersongoncalves/laravel-help-desk/tree/v1.15.0"
             },
             "funding": [
                 {
@@ -3403,8 +3403,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-16T23:29:54+00:00",
-            "published-time": "2026-11-16T23:30:20+00:00"
+            "time": "2026-11-17T01:41:48+00:00",
+            "published-time": "2026-11-17T01:42:10+00:00"
         },
         {
             "name": "jeffersongoncalves/laravel-pwa-favicon",
